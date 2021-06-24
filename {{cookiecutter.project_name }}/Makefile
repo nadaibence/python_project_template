@@ -15,7 +15,7 @@ setup_env: create_venv install_packages
 	echo "Done creating the environment!"
 
 copy_scripts:
-	sshpass -p $(PW) scp -r ./src $(USER)@$(HOST):$(PROJECT_ROOT) && echo success!
+	sshpass -p $(PW) rsync -av -e ssh --exclude='config/config.cfg' ./src $(USER)@$(HOST):$(PROJECT_ROOT) && echo success!
 
 run: copy_scripts
-	sshpass -p $(PW) ssh $(USER)@$(HOST) "$(PYTHON_PATH) $(PROJECT_ROOT)/main.py"
+	sshpass -p $(PW) ssh $(USER)@$(HOST) "$(PYTHON_PATH) $(PROJECT_ROOT)/src/main.py"
