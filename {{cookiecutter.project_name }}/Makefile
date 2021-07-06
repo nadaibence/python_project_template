@@ -3,6 +3,7 @@ HOST = {{ cookiecutter.host }}
 PROJECT_ROOT = {{ cookiecutter.project_root }}
 VENV_PATH = {{ cookiecutter.venv_path }}
 PYTHON_PATH = $(VENV_PATH)/bin/python
+PIP_PATH = $(VENV_PATH)/bin/pip
 PYINSTALLERS = {{ cookiecutter.pyinstallers }}
 
 create_venv:
