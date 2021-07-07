@@ -9,7 +9,7 @@ Prerequisites
 pip install cookiecutter
 ```
 
-2. Setup [SSH key pair](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) with the remote server
+2. Setup [SSH key pair](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2) with the remote server
 
 Create new project
 ---
