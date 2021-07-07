@@ -9,6 +9,8 @@ Prerequisites
 pip install cookiecutter
 ```
 
+2. Setup [SSH key pair](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) with the remote server
+
 Create new project
 ---
 
@@ -48,7 +50,7 @@ print('Hello World!')
 make run
 ```
 
-7. Clean everything once you finished everything
+7. Cleanup once you finished everything
 ```bash
 make cleanup
 ```
